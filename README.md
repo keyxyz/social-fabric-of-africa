@@ -20,7 +20,7 @@ Authored by Henry Ssenono
 ## Dataset
 
 **Facebook Social Connectedness Index (SCI)** was published by Meta Research(AI for Good) and distributed via the Humanitarian Data Exchange (HDX). 
-It can be found at https://data.humdata.org/dataset/social-connectedness-index. The country-to-country daataset was used `country.csv`
+It can be found at https://data.humdata.org/dataset/social-connectedness-index. The country.zip dataset was used, it is included in this repo and can be downloaded here: [country.csv](./data/country.csv)
 The dataset contains pairwise SCI scores between countries worldwide. The SCI between two countries is defined as:
 
 $$SCI_{i,j} = \frac{\text{FBfriendships}_{i,j}}{\text{FBusers}_i \times \text{FBusers}_j}$$

@@ -8,6 +8,8 @@ Authored by Henry Ssenono
 
 </div>
 
+> [!IMPORTANT]
+> 
 > *Special thanks to the [course instructors for designing a curriculum](https://github.com/AfricaEuropeCoreAI/Kujenga) that made ideas like PageRank, epidemic modelling, and regression feel not just learnable but genuinely applicable to questions that matter close to home.*
 
 ## Research Questions

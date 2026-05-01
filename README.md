@@ -1,6 +1,9 @@
 <div align=center>
 
-# Uganda in the Global Friendship Network
+
+<img width="1280" height="640" alt="e1f016a4-1678-45db-b901-0c914360c240" src="https://github.com/user-attachments/assets/8756c855-7fb6-4d4c-ad02-e9717cc56a07" />
+
+<br>
 
 A research project submitted as a part of the completion of [Kujenga AI Course](https://kujenga.readthedocs.io/en/latest/index.html).
 

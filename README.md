@@ -2,7 +2,7 @@
 
 # Uganda in the Global Friendship Network
 
-A research project submitted as a part of [Kujenga AI Course's](https://kujenga.readthedocs.io/en/latest/index.html) final module.
+A research project submitted as a part of the completion of [Kujenga AI Course](https://kujenga.readthedocs.io/en/latest/index.html).
 
 Authored by Henry Ssenono 
 

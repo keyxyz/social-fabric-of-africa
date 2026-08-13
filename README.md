@@ -14,6 +14,27 @@ Authored by Henry Ssenono
 > 
 > *Special thanks to the [course instructors for designing a curriculum](https://github.com/AfricaEuropeCoreAI/Kujenga) that made ideas like PageRank, epidemic modelling, and regression feel not just learnable but genuinely applicable to questions that matter close to home.*
 
+
+## Overview
+
+Social connections across national borders can provide insight into how countries are socially integrated within regional and global networks. 
+This project uses the Facebook Social Connectedness Index (SCI) to examine the position of Uganda within these networks, using Kenya as a comparison because both countries are located in East Africa but may occupy different positions within the wider African social network.
+
+The study looks at social connectedness from two perspectives. 
+- First, it examines the relative importance of Uganda and Kenya within the African network.
+- Second, it investigates whether Uganda and Kenya differ significantly in their social connectedness to countries around the world.
+
+## Research Hypothesis
+
+The network analysis is used to compare the relative importance of Uganda and Kenya within Africa. 
+For the global comparison, the study tests whether the two countries differ significantly in their social connectedness.
+
+- Null hypothesis (H<sub>0</sub>): Uganda and Kenya have equal levels of global social connectedness.
+- Alternative hypothesis (H<sub>1</sub>): Uganda and Kenya have different levels of global social connectedness.
+
+The analysis therefore begins by examining their positions within the African network and then tests whether the observed differences extend to their global connections.
+
+
 ## Research Questions
 
 1. How important is Uganda and Kenya in the African social network as measured by the Facebook Social Connectedness Index?
@@ -31,7 +52,7 @@ FB stands for Facebook.
 
 A higher score means people in those two countries are disproportionately likely to be Facebook friends.
 
-## Methods
+## Analysis
 
 The project applies two (2) techniques from the course:
 
@@ -44,11 +65,21 @@ The project applies two (2) techniques from the course:
 The SCI dataset is modelled as a weighted directed graph where countries are nodes and SCI scores are edge weights. 
 The PageRank algorithm (damping factor $d=0.85$,  iterative method) is implemented to rank Uganda's and Kenya's importance in the African friendship network accounting not just for how many connections Uganda/Kenya has, but how important those connected countries are.
 
+> **Result:**
+> The PageRank analysis shows that Kenya occupies a more important position than Uganda within the African social network.
+> Kenya ranks 18th out of 52 countries, compared with Uganda at 46th.
+> Therefore, although both countries participate in the wider African network, Kenya is more central according to the PageRank measure used in this study.
+
 ### Question 2 (using t-test)
 Uganda's and Kenya's log-SCI distributions (over common partner countries) are compared using a two-sided, two-sample t-test to determine whether the difference in mean social connectedness is statistically significant.
 
 - $H_0: μ_{UG} = μ_{KE}$
 - $H_1: μ_{UG} ≠ μ_{KE}$
+
+> **Result:**
+> The t-test produced a p-value of 0.115926.
+> Since this is greater than the significance level of 0.05, I fail to reject the null hypothesis.
+> The available SCI data therefore do not provide sufficient evidence that Uganda and Kenya differ significantly in their global social connectedness.
 
 ## Key Finding
 
@@ -85,6 +116,15 @@ This suggests that geographic proximity and shared migration corridors matter mo
 
 - SCI is based on Facebook users only and so populations without internet access are underrepresented which disproportionately affects African countries.
 - A null result in the t-test means we cannot detect a difference, not that no difference exists.
+
+## Conclusion
+
+This study compared Uganda and Kenya using the Social Connectedness Index to examine their positions within the African social network and their global social connectedness. 
+The PageRank analysis showed that Kenya ranked higher than Uganda, at 18th and 46th respectively, indicating that Kenya occupies a more central position in the African network. 
+However, the statistical test produced a p-value of `0.115926`, which is greater than the `0.05` significance level. 
+Therefore, _the null hypothesis is not rejected_, meaning the analysis does not provide sufficient evidence of a statistically significant difference in the global social connectedness of Uganda and Kenya. 
+Overall, the findings show that differences in network position do not necessarily imply significant differences in overall social connectedness.
+
 
 ## References
 
